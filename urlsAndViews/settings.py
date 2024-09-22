@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "urlsAndViews.departments.apps"
+    "urlsAndViews.departments",
 ]
 
 MIDDLEWARE = [
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'urlsAndViews.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "04",
+        "NAME": "05",
         "USER": "postgres-user",
         "PASSWORD": "password",
         "HOST": "127.0.0.1",
