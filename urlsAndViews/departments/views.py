@@ -10,7 +10,8 @@ def index(request):
 
 
 def view_with_var(request, variable):
-    return HttpResponse(f"<h1>Var: {variable}</h1>")
+    # return HttpResponse(f"<h1>Var: {variable}</h1>")
+    return render(request, 'departments/name_template.html', {'variable': variable})
 
 def view_with_pk(request, pk):
     return HttpResponse(f"<h1>Pk: {pk}</h1>")
